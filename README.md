@@ -75,4 +75,4 @@ Check out the documentation at [E18-Builder Wiki] (https://github.com/burzumishi
 
 ==============
 
-_Genuine GNU/Linux (c) 2009-2014_
+_Enlightenment E18 Builder (c) 2014_
