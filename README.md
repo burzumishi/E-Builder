@@ -46,8 +46,8 @@ Read more **[About Enlightenment] (http://www.enlightenment.org/p.php?p=about&l=
 
 ###Supported Linux Distributions
 
- - **Debian**
- - **Ubuntu**
+ - **Debian**: _sid_, _jessie_, _wheezy_.
+ - **Ubuntu**: _13.04_, _13.10_, _14.04_.
 
 
 ### Authors and Contributors

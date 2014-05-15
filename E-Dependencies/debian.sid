@@ -1,3 +1,5 @@
+libsndfile1-dev
+sndfile-programs
 systemd
 systemd-gui
 systemd-ui
