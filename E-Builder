@@ -59,7 +59,7 @@ for gitrepo in $REPOSITORIES; do
 
 	chmod +x ${package}.rules
 
-	sh ${package}.rules $PREFIX | tee -a log/${package}.log
+	sh ${package}.rules $PREFIX | tee -a $ELOG/${package}.log
 
 	echo
 	echo " * ebuilder: Package $package installed.";
