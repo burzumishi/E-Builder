@@ -50,7 +50,7 @@ This project is an automated builder for the **[Enlightenment Desktop Environmen
 
 ### Authors and Contributors
 
-**Antonio Cao** ([@burzumishi] (https://github.com/burzumishi)) started ([@e-builder] (https://github.com/burzumishi/e-builder)) project in **2014**.
+**Antonio Cao** ([@burzumishi] (https://github.com/burzumishi)) started ([@E-Builder] (https://github.com/burzumishi/E-Builder)) project in **2014**.
 
 Feel free to contribute with **E-Builder in GitHub**.
 
@@ -59,7 +59,7 @@ Feel free to contribute with **E-Builder in GitHub**.
 
 Having trouble with **E-Builder**?
 
-Check out the documentation at **[E-Builder Wiki] (https://github.com/burzumishi/e-builder/wiki)** or send an Issue and we’ll help you sort it out.
+Check out the documentation at **[E-Builder Wiki] (https://github.com/burzumishi/E-Builder/wiki)** or send an Issue and we’ll help you sort it out.
 
 ==============
 
