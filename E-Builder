@@ -1,23 +1,31 @@
 #!/bin/sh
 
+ERULES="E-Rules";
+
 EGITURL="https://git.enlightenment.org";
 DEPENDENCIES=$(grep -v ^# enlightenment.dependencies | awk -v ORS=" " '{print $0}');
 REPOSITORIES=$(grep -v ^# enlightenment.git.repos);
+
+# Start Enlightenment Build!
 
 echo
 echo " >>> Enlightenment DR18 Builder <<<";
 echo
 
+
+# Install Dependencies
+
 echo
 echo " * ebuilder: Installing necessary dependencies ...";
 echo
 
-# Install Dependencies
 sudo apt-get install $DEPENDENCIES;
 
-# Download Repos
+
+# Download and Install Packages from Git Repos
 
 if [ ! -d "src" ]; then mkdir -p src; fi;
+if [ ! -d "log" ]; then mkdir -p log; fi;
 
 for gitrepo in $REPOSITORIES; do
 
@@ -26,6 +34,23 @@ for gitrepo in $REPOSITORIES; do
 	# Obtain package name
 	package=$(echo $gitrepo | awk -F/ '{print $NF}' | sed 's/\.git//g');
 
+	# Download Source from GIT
 	echo " * ebuilder: Downloading $package from git repository ...";
+
 	git clone $EGITURL/$gitrepo;
+
+	# Build Package
+
+	echo " * ebuilder: Building $package from git sources ...";
+
+	cd $package;
+
+	cp $ERULES/$package ${package}.rules;
+
+	chmod +x ${package}.rules
+
+	sh ${package}.rules | tee -a log/${package}.log
+	
 done;
+
+exit 0;
