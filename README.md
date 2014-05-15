@@ -1,6 +1,6 @@
 ##[Enlightenment Builder] (http://burzumishi.github.io/e-builder)
 
-This project is an automated builder for **[Enlightenment Desktop Environment] (http://www.enlightenment.org)**.
+This project is an automated builder for the **[Enlightenment Desktop Environment] (http://www.enlightenment.org)**.
 
 
 ###E-Builder Releases
