@@ -1,4 +1,4 @@
-##[Enlightenment Builder] (http://burzumishi.github.io/e-builder)
+##[Enlightenment Builder] (http://burzumishi.github.io/E-Builder)
 
 This project is an automated builder for the **[Enlightenment Desktop Environment] (http://www.enlightenment.org)**.
 
