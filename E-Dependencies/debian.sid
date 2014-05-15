@@ -99,3 +99,5 @@ libssl-dev
 libcurl4-openssl-dev
 libpulse-dev
 libts-dev
+libsdl2-dev
+libsdl1.2-dev
