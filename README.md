@@ -12,15 +12,15 @@ This project is an automated builder for Enlightenment DR18.
 
 #### Enlightenment Core
 
-- core/efl.git
-- core/evas_generic_loaders.git
-- core/emotion_generic_players.git
-- core/elementary.git
-- core/enlightenment.git
+- **core/efl.git**
+- **core/evas_generic_loaders.git**
+- **core/emotion_generic_players.git**
+- **core/elementary.git**
+- **core/enlightenment.git**
 
 #### Bindings
 
-- bindings/python/python-efl.git
+- **bindings/python/python-efl.git**
 
 #### Applications
 
@@ -56,8 +56,8 @@ This project is an automated builder for Enlightenment DR18.
 
 ###Supported Device Architectures
 
- - x86
- - x86_64
+ - **x86**
+ - **x86_64**
 
 
 ### Authors and Contributors
