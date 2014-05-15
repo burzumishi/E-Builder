@@ -1,11 +1,14 @@
 #!/bin/sh
 
+# Set your install PREFIX and DISTRO
 PREFIX="/usr";
 DISTRO="debian.sid";
 
+# Set your Optimization FLAGS
 CFLAGS="";
 CXXFLAGS="";
 
+# E-Builder Main Routine (DO NOT TOUCH) 
 ERULES="$PWD/E-Rules";
 ELOG="$PWD/log";
 ESOURCES="$PWD/src";

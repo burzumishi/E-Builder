@@ -72,7 +72,7 @@ libpoppler-dev
 libraw-dev
 libspectre-dev
 libgstreamer1.0-dev
-libxine-dev
+libxine2-dev
 libvlc-dev
 luajit
 libluajit-5.1-dev
