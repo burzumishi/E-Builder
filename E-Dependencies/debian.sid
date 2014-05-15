@@ -1,7 +1,12 @@
 systemd
 systemd-gui
 systemd-ui
+systemd-cron
+systemd-sysv
 libsystemd-daemon-dev
+libsystemd-id128-dev
+libsystemd-login-dev
+libsystemd-journal-dev
 build-essential
 devscripts
 dh-autoreconf
