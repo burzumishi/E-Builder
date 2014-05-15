@@ -1,6 +1,7 @@
 #!/bin/sh
 
 PREFIX="/usr";
+DISTRO="debian.sid";
 
 CFLAGS="";
 CXXFLAGS="";
@@ -10,14 +11,16 @@ ELOG="$PWD/log";
 ESOURCES="$PWD/src";
 
 EGITURL="https://git.enlightenment.org";
-DEPENDENCIES=$(grep -v ^# Enlightenment.dependencies | awk -v ORS=" " '{print $0}');
-REPOSITORIES=$(grep -v ^# Enlightenment.git.repos);
+REPOSITORIES=$(grep -v ^# E-Git.repos);
+DEPENDENCIES=$(grep -v ^# E-Dependencies/${DISTRO} | awk -v ORS=" " '{print $0}');
+
 
 # Start Enlightenment Build!
 
 echo
 echo " >>> Enlightenment Desktop Environment (E-Builder) <<<";
 echo
+echo "    >>> E-Builder is working under ($DISTRO) <<<";
 
 
 # Install Dependencies
@@ -26,7 +29,9 @@ echo
 echo " * E-Builder: Installing necessary dependencies ...";
 echo
 
-sudo apt-get install $DEPENDENCIES;
+SUDO=$(which sudo);
+
+$SUDO apt-get install $DEPENDENCIES;
 
 
 # Download and Install Packages from Git Repos
