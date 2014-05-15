@@ -16,14 +16,14 @@ REPOSITORIES=$(grep -v ^# enlightenment.git.repos);
 # Start Enlightenment Build!
 
 echo
-echo " >>> Enlightenment DR18 Builder <<<";
+echo " >>> Enlightenment Desktop Environment (E-Builder) <<<";
 echo
 
 
 # Install Dependencies
 
 echo
-echo " * ebuilder: Installing necessary dependencies ...";
+echo " * E-Builder: Installing necessary dependencies ...";
 echo
 
 sudo apt-get install $DEPENDENCIES;
@@ -43,14 +43,14 @@ for gitrepo in $REPOSITORIES; do
 
 	# Download Source from GIT
 	echo
-	echo " * ebuilder: Downloading $package from git repository ...";
+	echo " * E-Builder: Downloading <$package> from git repository ...";
 	echo
 
 	git clone $EGITURL/$gitrepo;
 
 	# Build Package
 	echo
-	echo " * ebuilder: Building $package from git sources ...";
+	echo " * E-Builder: Building <$package> from git sources ...";
 	echo
 
 	cd $ESOURCES/$package;
@@ -64,7 +64,7 @@ for gitrepo in $REPOSITORIES; do
 	cd ..;
 
 	echo
-	echo " * ebuilder: Package $package installed.";
+	echo " * E-Builder: Package <$package> installed.";
 	echo
 	
 done;
