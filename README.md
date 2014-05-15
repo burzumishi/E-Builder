@@ -44,10 +44,10 @@ Read more **[About Enlightenment] (http://www.enlightenment.org/p.php?p=about&l=
 - **misc/entrance.git**
 
 
-###Supported Device Architectures
+###Supported Linux Distributions
 
- - **x86**
- - **x86_64**
+ - **Debian**
+ - **Ubuntu**
 
 
 ### Authors and Contributors
