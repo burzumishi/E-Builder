@@ -1,5 +1,10 @@
 #!/bin/sh
 
+PREFIX="/usr";
+
+CFLAGS="";
+CXXFLAGS="";
+
 ERULES="E-Rules";
 
 EGITURL="https://git.enlightenment.org";
@@ -35,13 +40,16 @@ for gitrepo in $REPOSITORIES; do
 	package=$(echo $gitrepo | awk -F/ '{print $NF}' | sed 's/\.git//g');
 
 	# Download Source from GIT
+	echo
 	echo " * ebuilder: Downloading $package from git repository ...";
+	echo
 
 	git clone $EGITURL/$gitrepo;
 
 	# Build Package
-
+	echo
 	echo " * ebuilder: Building $package from git sources ...";
+	echo
 
 	cd $package;
 
@@ -49,7 +57,11 @@ for gitrepo in $REPOSITORIES; do
 
 	chmod +x ${package}.rules
 
-	sh ${package}.rules | tee -a log/${package}.log
+	sh ${package}.rules $PREFIX | tee -a log/${package}.log
+
+	echo
+	echo " * ebuilder: Package $package installed.";
+	echo
 	
 done;
 
