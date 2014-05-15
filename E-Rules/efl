@@ -1,5 +1,11 @@
 PREFIX="$1";
 
+aclocal;
+autoconf;
+touch INSTALL LICENSE README;
+autoheader
+automake -a
+
 ./configure --prefix=$PREFIX --with-x  --with-opengl=full  --with-gnu-ld --with-dbus-services=/etc/dbus-1/system.d  --enable-xine  --enable-multisense  --enable-physics  --enable-gesture  --enable-egl  --enable-harfbuzz  --enable-drm --enable-fb --enable-sdl  --enable-systemd --enable-nls
 
 make

@@ -5,7 +5,9 @@ PREFIX="/usr";
 CFLAGS="";
 CXXFLAGS="";
 
-ERULES="E-Rules";
+ERULES="$PWD/E-Rules";
+ELOG="$PWD/log";
+ESOURCES="$PWD/src";
 
 EGITURL="https://git.enlightenment.org";
 DEPENDENCIES=$(grep -v ^# enlightenment.dependencies | awk -v ORS=" " '{print $0}');
@@ -29,8 +31,8 @@ sudo apt-get install $DEPENDENCIES;
 
 # Download and Install Packages from Git Repos
 
-if [ ! -d "src" ]; then mkdir -p src; fi;
-if [ ! -d "log" ]; then mkdir -p log; fi;
+if [ ! -d "$ESOURCES" ]; then mkdir -p $ESOURCES; fi;
+if [ ! -d "$ELOG" ]; then mkdir -p $ELOG; fi;
 
 for gitrepo in $REPOSITORIES; do
 
