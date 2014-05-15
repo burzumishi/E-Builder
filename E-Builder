@@ -36,7 +36,7 @@ if [ ! -d "$ELOG" ]; then mkdir -p $ELOG; fi;
 
 for gitrepo in $REPOSITORIES; do
 
-	cd src;
+	cd $ESOURCES;
 
 	# Obtain package name
 	package=$(echo $gitrepo | awk -F/ '{print $NF}' | sed 's/\.git//g');
@@ -53,13 +53,15 @@ for gitrepo in $REPOSITORIES; do
 	echo " * ebuilder: Building $package from git sources ...";
 	echo
 
-	cd $package;
+	cd $ESOURCES/$package;
 
-	cp $ERULES/$package ${package}.rules;
+	cp $ERULES/$package $ESOURCES/$package/${package}.rules;
 
-	chmod +x ${package}.rules
+	chmod +x $ESOURCES/$package/${package}.rules;
 
-	sh ${package}.rules $PREFIX | tee -a $ELOG/${package}.log
+	sh ${package}.rules $PREFIX | tee -a $ELOG/${package}.log;
+
+	cd ..;
 
 	echo
 	echo " * ebuilder: Package $package installed.";

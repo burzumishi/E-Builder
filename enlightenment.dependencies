@@ -1,3 +1,4 @@
+tsconf
 libc6-dev
 zlib-dev
 freetype2-dev
@@ -45,3 +46,4 @@ libssl-dev
 libcurl4-openssl-dev
 libdbus1-dev
 libpulseaudio-dev
+libts-dev
