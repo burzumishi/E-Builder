@@ -1,0 +1,12 @@
+PREFIX="$1";
+
+if [ -f "autogen.sh" ]; then
+        sh autogen.sh
+fi
+
+./configure --prefix=$PREFIX --with-x  --with-opengl=full  --with-gnu-ld --with-dbus-services=/etc/dbus-1/system.d  --enable-xine  --enable-multisense  --enable-physics  --enable-gesture  --enable-egl  --enable-harfbuzz  --enable-drm --enable-fb --enable-sdl  --enable-systemd --enable-nls --disable-tslib --disable-gesture
+
+make
+
+make install
+

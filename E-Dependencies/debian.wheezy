@@ -1,3 +1,7 @@
+systemd
+systemd-gui
+systemd-ui
+libsystemd-daemon-dev
 build-essential
 devscripts
 dh-autoreconf

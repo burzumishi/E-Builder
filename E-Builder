@@ -28,7 +28,7 @@ CXXFLAGS="";
 # E-Builder Main Routine (DO NOT TOUCH these settings) 
 #
 
-ERULES="$PWD/E-Rules";
+ERULES="$PWD/E-Rules/$DISTRO";
 ELOG="$PWD/log";
 ESOURCES="$PWD/src";
 

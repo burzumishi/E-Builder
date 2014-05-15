@@ -1,0 +1,12 @@
+PREFIX="$1";
+
+if [ -f "autogen.sh" ]; then
+	sh autogen.sh
+fi
+
+./configure --prefix=$PREFIX 
+
+make
+
+make install
+
