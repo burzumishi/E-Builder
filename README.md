@@ -12,76 +12,66 @@ This project is an automated builder for Enlightenment DR18.
 
 #### Enlightenment Core
 
-core/efl.git
-core/evas_generic_loaders.git
-core/emotion_generic_players.git
-core/elementary.git
-core/enlightenment.git
+- core/efl.git
+- core/evas_generic_loaders.git
+- core/emotion_generic_players.git
+- core/elementary.git
+- core/enlightenment.git
 
 #### Bindings
 
-bindings/python/python-efl.git
+- bindings/python/python-efl.git
 
 #### Applications
 
-apps/econnman.git
-apps/terminology.git
-apps/ecrire.git
-apps/emprint.git
-apps/enjoy.git
-apps/ephoto.git
-apps/epour.git
-apps/equate.git
-apps/eruler.git
-apps/espionage.git
-apps/eve.git
-apps/rage.git
+- **apps/econnman.git**
+- **apps/terminology.git**
+- **apps/ecrire.git**
+- **apps/emprint.git**
+- **apps/enjoy.git**
+- **apps/ephoto.git**
+- **apps/epour.git**
+- **apps/equate.git**
+- **apps/eruler.git**
+- **apps/espionage.git**
+- **apps/eve.git**
+- **apps/rage.git**
 
 #### Misc
 
-misc/entrance.git
+- **misc/entrance.git**
 
 #### Themes
 
-themes/darkness.git
-themes/23oz.git Theme
-themes/b_and_w.git
-themes/blingbling.git
-themes/detour-elm.git
-themes/detourious.git
-themes/efenniht.git
-themes/ewl_b_and_w.git
-themes/klok.git
+- **themes/darkness.git**
+- **themes/23oz.git**
+- **themes/b_and_w.git**
+- **themes/blingbling.git**
+- **themes/detour-elm.git**
+- **themes/detourious.git**
+- **themes/efenniht.git**
+- **themes/ewl_b_and_w.git**
+- **themes/klok.git**
 
 
 ###Supported Device Architectures
 
  - x86
  - x86_64
- - arm
- - ppc
-
-
-### Source Code Repositories
-
-
-* **[DNA Source Code] (https://github.com/genuine-linux/genuine-dna)**
-* **[Genetic Source Code] (https://github.com/genuine-linux/genetic)**
 
 
 ### Authors and Contributors
 
+**Antonio Cao** ([@burzumishi] (https://github.com/burzumishi)) started ([@enlightenment-builder] (https://github.com/burzumishi/enlightenment-builder)) project in **2014**.
 
-**Antonio Cao** ([@burzumishi] (https://github.com/burzumishi)) started ([@genuine-linux] (https://github.com/genuine-linux)) project in **2009**.
-
-Later in **2014** ([@genuine-linux] (https://github.com/genuine-linux)) project was published on [GitHub] (http://github.com).
+Feel free to contribute with **E18-Builder in GitHub**.
 
 
 ### Support or Contact
 
-Having trouble with Genuine?
+Having trouble with **E18-Builder**?
 
-Check out the documentation at [Genuine Wiki] (https://github.com/genuine-linux/genuine/wiki) or send an Issue and we’ll help you sort it out.
+Check out the documentation at [E18-Builder Wiki] (https://github.com/burzumishi/enlightenment-builder/wiki) or send an Issue and we’ll help you sort it out.
 
 ==============
 
