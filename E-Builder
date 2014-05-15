@@ -1,14 +1,33 @@
 #!/bin/sh
 
+#
+# Enlightenment Builder (c) @burzumishi 2014
+#
+
+#
+# GitHub: https://github.com/burzumishi/E-Builder
+# GitHub Page: http://burzumishi.github.io/E-Builder
+#
+
+#
 # Set your install PREFIX and DISTRO
+#
+
 PREFIX="/usr";
 DISTRO="debian.sid";
 
+
+#
 # Set your Optimization FLAGS
+#
+
 CFLAGS="";
 CXXFLAGS="";
 
-# E-Builder Main Routine (DO NOT TOUCH) 
+#
+# E-Builder Main Routine (DO NOT TOUCH these settings) 
+#
+
 ERULES="$PWD/E-Rules";
 ELOG="$PWD/log";
 ESOURCES="$PWD/src";
@@ -17,16 +36,18 @@ EGITURL="https://git.enlightenment.org";
 REPOSITORIES=$(grep -v ^# E-Git.repos);
 DEPENDENCIES=$(grep -v ^# E-Dependencies/${DISTRO} | awk -v ORS=" " '{print $0}');
 
-
+#
 # Start Enlightenment Build!
+#
 
 echo
 echo " >>> Enlightenment Desktop Environment (E-Builder) <<<";
 echo
 echo "    >>> E-Builder is working under ($DISTRO) <<<";
 
-
+#
 # Install Dependencies
+#
 
 echo
 echo " * E-Builder: Installing necessary dependencies ...";
@@ -36,8 +57,9 @@ SUDO=$(which sudo);
 
 $SUDO apt-get install $DEPENDENCIES;
 
-
+#
 # Download and Install Packages from Git Repos
+#
 
 if [ ! -d "$ESOURCES" ]; then mkdir -p $ESOURCES; fi;
 if [ ! -d "$ELOG" ]; then mkdir -p $ELOG; fi;
@@ -45,18 +67,27 @@ if [ ! -d "$ELOG" ]; then mkdir -p $ELOG; fi;
 for gitrepo in $REPOSITORIES; do
 
 	cd $ESOURCES;
-
+	
+	#
 	# Obtain package name
+	#
+
 	package=$(echo $gitrepo | awk -F/ '{print $NF}' | sed 's/\.git//g');
 
+	#
 	# Download Source from GIT
+	#
+
 	echo
 	echo " * E-Builder: Downloading <$package> from git repository ...";
 	echo
 
 	git clone $EGITURL/$gitrepo;
 
+	#
 	# Build Package
+	#
+
 	echo
 	echo " * E-Builder: Building <$package> from git sources ...";
 	echo

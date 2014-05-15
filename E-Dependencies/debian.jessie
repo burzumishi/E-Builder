@@ -1,3 +1,10 @@
+build-essential
+devscripts
+dh-autoreconf
+make
+gcc
+automake
+autoconf
 xserver-xorg-input-multitouch
 libgrail-dev
 libgrip-dev
