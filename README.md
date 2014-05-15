@@ -1,9 +1,9 @@
-##[Enlightenment DR18 Builder] (http://burzumishi.github.io/enlightenment-builder)
+##[Enlightenment Builder] (http://burzumishi.github.io/enlightenment-builder)
 
-This project is an automated builder for **[Enlightenment DR18] (http://www.enlightenment.org)**.
+This project is an automated builder for **[Enlightenment Desktop Environment] (http://www.enlightenment.org)**.
 
 
-###E18-Builder Releases
+###E-Builder Releases
 
  * **Release Candidate 01.14.05**: _has not been released yet! (Work in progress)_
 
@@ -64,14 +64,14 @@ This project is an automated builder for **[Enlightenment DR18] (http://www.enli
 
 **Antonio Cao** ([@burzumishi] (https://github.com/burzumishi)) started ([@enlightenment-builder] (https://github.com/burzumishi/enlightenment-builder)) project in **2014**.
 
-Feel free to contribute with **E18-Builder in GitHub**.
+Feel free to contribute with **E-Builder in GitHub**.
 
 
 ### Support or Contact
 
-Having trouble with **E18-Builder**?
+Having trouble with **E-Builder**?
 
-Check out the documentation at [E18-Builder Wiki] (https://github.com/burzumishi/enlightenment-builder/wiki) or send an Issue and we’ll help you sort it out.
+Check out the documentation at [E-Builder Wiki] (https://github.com/burzumishi/enlightenment-builder/wiki) or send an Issue and we’ll help you sort it out.
 
 ==============
 
