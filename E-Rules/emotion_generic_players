@@ -1,10 +1,8 @@
 PREFIX="$1";
 
-aclocal;
-autoconf;
-touch INSTALL LICENSE README;
-autoheader
-automake -a
+if [ -f "autogen.sh" ]; then
+	sh autogen.sh
+fi
 
 ./configure --prefix=$PREFIX 
 

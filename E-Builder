@@ -10,8 +10,8 @@ ELOG="$PWD/log";
 ESOURCES="$PWD/src";
 
 EGITURL="https://git.enlightenment.org";
-DEPENDENCIES=$(grep -v ^# enlightenment.dependencies | awk -v ORS=" " '{print $0}');
-REPOSITORIES=$(grep -v ^# enlightenment.git.repos);
+DEPENDENCIES=$(grep -v ^# Enlightenment.dependencies | awk -v ORS=" " '{print $0}');
+REPOSITORIES=$(grep -v ^# Enlightenment.git.repos);
 
 # Start Enlightenment Build!
 
