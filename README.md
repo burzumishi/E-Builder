@@ -1,6 +1,6 @@
 ##[Enlightenment DR18 Builder] (http://burzumishi.github.io/enlightenment-builder)
 
-This project is an automated builder for Enlightenment DR18.
+This project is an automated builder for **[Enlightenment DR18] (http://www.enlightenment.org)**.
 
 
 ###E18-Builder Releases
