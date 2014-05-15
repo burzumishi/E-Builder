@@ -22,7 +22,7 @@ Read more **[About Enlightenment] (http://www.enlightenment.org/p.php?p=about&l=
 
 #### [Enlightenment Bindings]
 
-- **[bindings/python/python-efl.git (https://git.enlightenment.org/bindings/python/python-efl.git)**
+- **[bindings/python/python-efl.git] (https://git.enlightenment.org/bindings/python/python-efl.git)**
 
 #### [Enlightenment Applications]
 
