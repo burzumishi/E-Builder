@@ -2,6 +2,8 @@
 
 This project is an automated builder for the **[Enlightenment Desktop Environment] (http://www.enlightenment.org)**.
 
+Read more **[About Enlightenment] (http://www.enlightenment.org/p.php?p=about&l=en)**.
+
 
 ###E-Builder Releases
 
