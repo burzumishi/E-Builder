@@ -14,7 +14,8 @@
 #
 
 PREFIX="/usr";
-DISTRO="debian.sid";
+#DISTRO="debian.sid";
+DISTRO="ubuntu.1404";
 
 
 #
@@ -97,6 +98,10 @@ for gitrepo in $REPOSITORIES; do
 	cp $ERULES/$package $ESOURCES/$package/${package}.rules;
 
 	chmod +x $ESOURCES/$package/${package}.rules;
+
+	if [ ! -f "configure" ]; then sh autogen.sh; fi;
+
+	if [ -f "Makefile" ]; then make distclean; make clean; fi;
 
 	sh ${package}.rules $PREFIX | tee -a $ELOG/${package}.log;
 
