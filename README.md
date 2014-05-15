@@ -1,4 +1,4 @@
-##[Enlightenment Builder] (http://burzumishi.github.io/enlightenment-builder)
+##[Enlightenment Builder] (http://burzumishi.github.io/e-builder)
 
 This project is an automated builder for **[Enlightenment Desktop Environment] (http://www.enlightenment.org)**.
 
@@ -62,7 +62,7 @@ This project is an automated builder for **[Enlightenment Desktop Environment] (
 
 ### Authors and Contributors
 
-**Antonio Cao** ([@burzumishi] (https://github.com/burzumishi)) started ([@enlightenment-builder] (https://github.com/burzumishi/enlightenment-builder)) project in **2014**.
+**Antonio Cao** ([@burzumishi] (https://github.com/burzumishi)) started ([@e-builder] (https://github.com/burzumishi/e-builder)) project in **2014**.
 
 Feel free to contribute with **E-Builder in GitHub**.
 
@@ -71,8 +71,8 @@ Feel free to contribute with **E-Builder in GitHub**.
 
 Having trouble with **E-Builder**?
 
-Check out the documentation at [E-Builder Wiki] (https://github.com/burzumishi/enlightenment-builder/wiki) or send an Issue and we’ll help you sort it out.
+Check out the documentation at [E-Builder Wiki] (https://github.com/burzumishi/e-builder/wiki) or send an Issue and we’ll help you sort it out.
 
 ==============
 
-_Enlightenment E18 Builder (c) 2014_
+_Enlightenment Builder (c) 2014_
