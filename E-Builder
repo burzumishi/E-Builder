@@ -1,3 +1,31 @@
 #!/bin/sh
 
+EGITURL="https://git.enlightenment.org";
+DEPENDENCIES=$(grep -v ^# enlightenment.dependencies | awk -v ORS=" " '{print $0}');
+REPOSITORIES=$(grep -v ^# enlightenment.git.repos);
 
+echo
+echo " >>> Enlightenment DR18 Builder <<<";
+echo
+
+echo
+echo " * ebuilder: Installing necessary dependencies ...";
+echo
+
+# Install Dependencies
+sudo apt-get install $DEPENDENCIES;
+
+# Download Repos
+
+if [ ! -d "src" ]; then mkdir -p src; fi;
+
+for gitrepo in $REPOSITORIES; do
+
+	cd src;
+
+	# Obtain package name
+	package=$(echo $gitrepo | awk -F/ '{print $NF}' | sed 's/\.git//g');
+
+	echo " * ebuilder: Downloading $package from git repository ...";
+	git clone $EGITURL/$gitrepo;
+done;

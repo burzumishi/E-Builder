@@ -42,6 +42,6 @@ libwebp-dev
 libbullet-dev
 util-linux-dev
 libssl-dev
-libcurl-dev
+libcurl4-openssl-dev
 libdbus1-dev
 libpulseaudio-dev
