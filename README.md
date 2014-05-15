@@ -10,7 +10,7 @@ This project is an automated builder for the **[Enlightenment Desktop Environmen
 
 ###Software Packages
 
-#### Enlightenment Core
+#### [Enlightenment Core]
 
 - **core/efl.git**
 - **core/evas_generic_loaders.git**
@@ -18,11 +18,11 @@ This project is an automated builder for the **[Enlightenment Desktop Environmen
 - **core/elementary.git**
 - **core/enlightenment.git**
 
-#### Bindings
+#### [Enlightenment Bindings]
 
 - **bindings/python/python-efl.git**
 
-#### Applications
+#### [Enlightenment Applications]
 
 - **apps/econnman.git**
 - **apps/terminology.git**
@@ -37,21 +37,9 @@ This project is an automated builder for the **[Enlightenment Desktop Environmen
 - **apps/eve.git**
 - **apps/rage.git**
 
-#### Misc
+#### [Enlightenment Misc]
 
 - **misc/entrance.git**
-
-#### Themes
-
-- **themes/darkness.git**
-- **themes/23oz.git**
-- **themes/b_and_w.git**
-- **themes/blingbling.git**
-- **themes/detour-elm.git**
-- **themes/detourious.git**
-- **themes/efenniht.git**
-- **themes/ewl_b_and_w.git**
-- **themes/klok.git**
 
 
 ###Supported Device Architectures
@@ -71,8 +59,8 @@ Feel free to contribute with **E-Builder in GitHub**.
 
 Having trouble with **E-Builder**?
 
-Check out the documentation at [E-Builder Wiki] (https://github.com/burzumishi/e-builder/wiki) or send an Issue and we’ll help you sort it out.
+Check out the documentation at **[E-Builder Wiki] (https://github.com/burzumishi/e-builder/wiki)** or send an Issue and we’ll help you sort it out.
 
 ==============
 
-_Enlightenment Builder (c) 2014_
+_**Enlightenment Builder** (c) 2014_
