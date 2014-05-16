@@ -148,16 +148,20 @@ for tarball in $REPOSITORIES; do
 	#
 
 	package=$(echo $tarball | awk -F/ '{print $NF}' | sed 's/\.tar\.gz//g');
+	rules=$(echo $package | awk -F- '{print $1}');
 
 	#
 	# Download Source from Enlightenment Web Site
 	#
 
-	echo
-	echo " * E-Builder: Downloading <$package> from Enlightenment website ...";
-	echo
+	if [ ! -f "${package}.tar.gz" ]; then
 
-	wget $EURL/$tarball;
+		echo
+		echo " * E-Builder: Downloading <$package> from Enlightenment website ...";
+		echo
+
+		wget $EURL/$tarball;
+	fi;
 	
 	#
 	# Extract Source from Tarball
@@ -179,15 +183,15 @@ for tarball in $REPOSITORIES; do
 
 	cd $ESOURCES/$package;
 
-	cp $ERULES/$package $ESOURCES/$package/${package}.rules;
+	cp $ERULES/${rules}.rules $ESOURCES/$package/${rules}.rules;
 
-	chmod +x $ESOURCES/$package/${package}.rules;
+	chmod +x $ESOURCES/$package/${rules}.rules;
 
 	# if [ ! -f "configure" ]; then sh autogen.sh; fi;
 
 	if [ -f "Makefile" ]; then make distclean; make clean; fi;
 
-	sh ${package}.rules $PREFIX | tee -a $ELOG/${package}.log;
+	sh ${rules}.rules $PREFIX | tee -a $ELOG/${package}.log;
 
 	cd ..;
 
