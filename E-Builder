@@ -84,7 +84,7 @@ if [ ! -d "$ELOG" ]; then mkdir -p $ELOG; fi;
 
 case $RELEASE in
 
-	git|GIT|Git)
+	Git)
 
 # Git Release Builder
 for gitrepo in $REPOSITORIES; do
@@ -136,7 +136,7 @@ for gitrepo in $REPOSITORIES; do
 done;
 	;;
 	
-	tar|TAR|Tar|stable|STABLE|Stable)
+	Tar)
 
 # Git Release Builder
 for tarball in $REPOSITORIES; do
