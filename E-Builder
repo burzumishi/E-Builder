@@ -183,7 +183,7 @@ for tarball in $REPOSITORIES; do
 
 	cd $ESOURCES/$package;
 
-	cp $ERULES/${rules}.rules $ESOURCES/$package/${rules}.rules;
+	cp $ERULES/${rules} $ESOURCES/$package/${rules}.rules;
 
 	chmod +x $ESOURCES/$package/${rules}.rules;
 
