@@ -41,12 +41,12 @@ ERULES="$PWD/E-Rules/$DISTRO";
 ELOG="$PWD/log";
 ESOURCES="$PWD/src";
 
-EURL="http://download.enlightenment.org/rel";
+EURL="http://download.enlightenment.org";
 EGITURL="https://git.enlightenment.org";
 
 REPOSITORIES=$(grep -v ^# E-${RELEASE}.release);
 
-DEPENDENCIES=$(grep -v ^# E-Dependencies/${DISTRO} | awk -v ORS=" " '{print $0}');
+DEPENDENCIES=$(grep -v ^# E-Dependencies/${RELEASE}/${DISTRO} | awk -v ORS=" " '{print $0}');
 
 #
 # Start Enlightenment Build!
@@ -57,7 +57,7 @@ echo " >>> Enlightenment Desktop Environment (E-Builder) <<<";
 echo
 echo "    >>> E-Builder is working under ($DISTRO) <<<";
 echo
-echo "                  >>> $RELEASE <<<";
+echo "                >>> $RELEASE <<<";
 echo
 
 #
@@ -156,6 +156,16 @@ for tarball in $REPOSITORIES; do
 	echo
 
 	wget $EURL/$tarball;
+	
+	#
+	# Extract Source from Tarball
+	#
+
+	echo
+	echo " * E-Builder: Extracting <$package> from <${package}.tar.gz> ...";
+	echo
+
+	tar zxf ${package}.tar.gz
 
 	#
 	# Build Package
