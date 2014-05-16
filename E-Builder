@@ -31,10 +31,12 @@ CXXFLAGS="";
 
 RELEASE="$1";
 
-if [ ! -z "$RELEASE" ]; then
+if [ -z "$RELEASE" ]; then
 	echo
 	echo "./E-Builder [Tar|Git]";
 	echo
+
+	exit 1;
 fi;
 
 ERULES="$PWD/E-Rules/$DISTRO";
