@@ -14,8 +14,8 @@
 #
 
 PREFIX="/usr";
-#DISTRO="debian.sid";
-DISTRO="ubuntu.1404";
+DISTRO="debian.sid";
+#DISTRO="ubuntu.1404";
 
 
 #
@@ -41,6 +41,7 @@ ERULES="$PWD/E-Rules/$DISTRO";
 ELOG="$PWD/log";
 ESOURCES="$PWD/src";
 
+EURL="http://download.enlightenment.org/rel";
 EGITURL="https://git.enlightenment.org";
 
 REPOSITORIES=$(grep -v ^# E-${RELEASE}.release);
@@ -69,6 +70,7 @@ echo
 
 SUDO=$(which sudo);
 
+#
 $SUDO apt-get install $DEPENDENCIES;
 
 #
@@ -153,7 +155,7 @@ for tarball in $REPOSITORIES; do
 	echo " * E-Builder: Downloading <$package> from Enlightenment website ...";
 	echo
 
-	git clone $EGITURL/$gitrepo;
+	wget $EURL/$tarball;
 
 	#
 	# Build Package
