@@ -1,0 +1,31 @@
+#
+# Enlightenment Core
+#
+core/efl.git
+core/evas_generic_loaders.git
+core/emotion_generic_players.git
+core/elementary.git
+core/enlightenment.git
+#
+# Bindings
+#
+bindings/python/python-efl.git
+#
+# Applications
+#
+apps/econnman.git
+apps/terminology.git
+apps/ecrire.git
+apps/emprint.git
+apps/enjoy.git
+apps/ephoto.git
+apps/epour.git
+apps/equate.git
+apps/eruler.git
+apps/espionage.git
+apps/eve.git
+apps/rage.git
+#
+# Misc
+#
+misc/entrance.git
