@@ -24,8 +24,3 @@ rel/apps/terminology/terminology-0.5.0.tar.gz
 releases/expedite-1.7.9.tar.gz
 releases/exquisite-1.0.0.tar.gz
 rel/apps/enventor/enventor-0.2.0.tar.gz
-#
-# Extra Libraries
-#
-rel/libs/webkit-efl/webkit-efl-164189.tar.xz
-rel/libs/webkit-efl/ewebkit-1.9-1-x86_64.pkg.tar.xz
