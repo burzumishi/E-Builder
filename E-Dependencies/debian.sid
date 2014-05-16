@@ -1,3 +1,5 @@
+xinit
+xterm
 autoconf
 automake
 build-essential

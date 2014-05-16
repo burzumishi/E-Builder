@@ -29,12 +29,22 @@ CXXFLAGS="";
 # E-Builder Main Routine (DO NOT TOUCH these settings) 
 #
 
+RELEASE="$1";
+
+if [ ! -z "$RELEASE" ]; then
+	echo
+	echo "./E-Builder [Tar|Git]";
+	echo
+fi;
+
 ERULES="$PWD/E-Rules/$DISTRO";
 ELOG="$PWD/log";
 ESOURCES="$PWD/src";
 
 EGITURL="https://git.enlightenment.org";
-REPOSITORIES=$(grep -v ^# E-Git.repos);
+
+REPOSITORIES=$(grep -v ^# E-${RELEASE}.release);
+
 DEPENDENCIES=$(grep -v ^# E-Dependencies/${DISTRO} | awk -v ORS=" " '{print $0}');
 
 #
@@ -45,6 +55,9 @@ echo
 echo " >>> Enlightenment Desktop Environment (E-Builder) <<<";
 echo
 echo "    >>> E-Builder is working under ($DISTRO) <<<";
+echo
+echo "                  >>> $RELEASE <<<";
+echo
 
 #
 # Install Dependencies
@@ -65,6 +78,11 @@ $SUDO apt-get install $DEPENDENCIES;
 if [ ! -d "$ESOURCES" ]; then mkdir -p $ESOURCES; fi;
 if [ ! -d "$ELOG" ]; then mkdir -p $ELOG; fi;
 
+case $RELEASE in
+
+	git|GIT|Git)
+
+# Git Release Builder
 for gitrepo in $REPOSITORIES; do
 
 	cd $ESOURCES;
@@ -112,5 +130,17 @@ for gitrepo in $REPOSITORIES; do
 	echo
 	
 done;
+	;;
+	
+	tar|TAR|Tar|stable|STABLE|Stable)
+
+	;;
+
+	*) echo
+	   echo " * E-Builder: Use <Tar> or <Git>.";
+	   echo
+	   exit 1;
+	;;
+esac
 
 exit 0;
