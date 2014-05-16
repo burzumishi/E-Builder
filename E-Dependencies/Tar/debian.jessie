@@ -1,3 +1,6 @@
+xinit
+xterm
+lightdm
 autoconf
 automake
 build-essential
