@@ -1,31 +1,31 @@
 #
-# Enlightenment Core
+# [Enlightenment Core]
 #
-core/efl.git
-core/evas_generic_loaders.git
-core/emotion_generic_players.git
-core/elementary.git
-core/enlightenment.git
+#
+# Libraries
+#
+rel/libs/efl/efl-1.9.4.tar.gz
+rel/libs/evas_generic_loaders/evas_generic_loaders-1.9.0.tar.gz
+rel/libs/emotion_generic_players/emotion_generic_players-1.9.0.tar.gz
+rel/libs/elementary/elementary-1.9.4.tar.gz
+#
+# Enlightenment Desktop Environment
+#
+rel/apps/enlightenment/enlightenment-0.18.8.tar.gz
 #
 # Bindings
 #
-bindings/python/python-efl.git
+rel/bindings/python/python-efl-1.9.0.tar.gz
 #
 # Applications
 #
-apps/econnman.git
-apps/terminology.git
-apps/ecrire.git
-apps/emprint.git
-apps/enjoy.git
-apps/ephoto.git
-apps/epour.git
-apps/equate.git
-apps/eruler.git
-apps/espionage.git
-apps/eve.git
-apps/rage.git
+rel/apps/econnman/econnman-1.1.tar.gz
+rel/apps/terminology/terminology-0.5.0.tar.gz
+releases/expedite-1.7.9.tar.gz
+releases/exquisite-1.0.0.tar.gz
+rel/apps/enventor/enventor-0.2.0.tar.gz
 #
-# Misc
+# Extra Libraries
 #
-misc/entrance.git
+rel/libs/webkit-efl/webkit-efl-164189.tar.xz
+rel/libs/webkit-efl/ewebkit-1.9-1-x86_64.pkg.tar.xz
