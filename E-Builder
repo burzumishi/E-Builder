@@ -134,6 +134,55 @@ done;
 	
 	tar|TAR|Tar|stable|STABLE|Stable)
 
+# Git Release Builder
+for tarball in $REPOSITORIES; do
+
+	cd $ESOURCES;
+	
+	#
+	# Obtain package name
+	#
+
+	package=$(echo $tarball | awk -F/ '{print $NF}' | sed 's/\.tar\.gz//g');
+
+	#
+	# Download Source from Enlightenment Web Site
+	#
+
+	echo
+	echo " * E-Builder: Downloading <$package> from Enlightenment website ...";
+	echo
+
+	git clone $EGITURL/$gitrepo;
+
+	#
+	# Build Package
+	#
+
+	echo
+	echo " * E-Builder: Building <$package> from tarball sources ...";
+	echo
+
+	cd $ESOURCES/$package;
+
+	cp $ERULES/$package $ESOURCES/$package/${package}.rules;
+
+	chmod +x $ESOURCES/$package/${package}.rules;
+
+	# if [ ! -f "configure" ]; then sh autogen.sh; fi;
+
+	if [ -f "Makefile" ]; then make distclean; make clean; fi;
+
+	sh ${package}.rules $PREFIX | tee -a $ELOG/${package}.log;
+
+	cd ..;
+
+	echo
+	echo " * E-Builder: Package <$package> installed.";
+	echo
+	
+done;
+
 	;;
 
 	*) echo
