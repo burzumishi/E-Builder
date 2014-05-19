@@ -50,6 +50,11 @@ REPOSITORIES=$(grep -v ^# E-${RELEASE}.release);
 
 DEPENDENCIES=$(grep -v ^# E-Dependencies/${RELEASE}/${DISTRO} | awk -v ORS=" " '{print $0}');
 
+if [ "$PREFIX" != "/usr" ]; then
+	PATH=$PATH:$PREFIX/bin:$PREFIX/sbin
+	export PATH
+fi;
+
 #
 # Start Enlightenment Build!
 #
@@ -129,6 +134,8 @@ for gitrepo in $REPOSITORIES; do
 
 	cd ..;
 
+	ldconfig;
+
 	echo
 	echo " * E-Builder: Package <$package> installed.";
 	echo
@@ -194,6 +201,8 @@ for tarball in $REPOSITORIES; do
 	sh ${rules}.rules $PREFIX | tee -a $ELOG/${package}.log;
 
 	cd ..;
+
+	ldconfig;
 
 	echo
 	echo " * E-Builder: Package <$package> installed.";
