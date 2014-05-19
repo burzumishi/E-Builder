@@ -1,6 +1,6 @@
 ##[Enlightenment Builder] (http://burzumishi.github.io/E-Builder)
 
-This project is an automated builder for the latest **[Enlightenment Desktop Environment] (http://www.enlightenment.org)** Git Sources.
+This project is an automated builder for the latest **[Enlightenment Desktop Environment] (http://www.enlightenment.org)** TarBall or Git Releases.
 
 Read more **[About Enlightenment] (http://www.enlightenment.org/p.php?p=about&l=en)**.
 
