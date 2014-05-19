@@ -1,3 +1,6 @@
+libpam-gnome-keyring
+xinit
+xterm
 autoconf
 automake
 build-essential
