@@ -7,14 +7,19 @@ Read more **[About Enlightenment] (http://www.enlightenment.org/p.php?p=about&l=
 
 ###E-Builder Releases
 
- * **Release Candidate 01.14.05**: _has not been released yet! (Work in progress)_
+ * **[E-Builder Pre-Release v0.0.1] (https://github.com/burzumishi/E-Builder/releases/tag/0.0.1)**
 
 
 ###Supported Linux Distributions
 
- - **Debian**: _sid_, _jessie_, _wheezy_.
- - **Ubuntu**: _13.04_, _13.10_, _14.04_.
+ - **Debian**: _sid_.
+ - **Ubuntu**: _14.04_.
 
+#### Not Tested
+
+ - **Debian**: _jessie_, _wheezy_.
+ - **Ubuntu**: _13.04_, _13.10_.
+ - 
 
 ### Authors and Contributors
 
