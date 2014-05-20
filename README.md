@@ -19,7 +19,7 @@ Read more **[About Enlightenment] (http://www.enlightenment.org/p.php?p=about&l=
 
  - **Debian**: _jessie_, _wheezy_.
  - **Ubuntu**: _13.04_, _13.10_.
- - 
+
 
 ### Authors and Contributors
 
