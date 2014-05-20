@@ -14,8 +14,8 @@
 #
 
 PREFIX="/usr";
-DISTRO="debian.sid";
-#DISTRO="ubuntu.1404";
+#DISTRO="debian.sid";
+DISTRO="ubuntu.1404";
 
 
 #

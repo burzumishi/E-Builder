@@ -1,7 +1,5 @@
 PREFIX="$1";
 
-sh autogen.sh
-
 ./configure --prefix=$PREFIX 
 
 make
