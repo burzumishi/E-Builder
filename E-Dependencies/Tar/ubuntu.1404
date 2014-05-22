@@ -1,3 +1,7 @@
+connman
+connman-ui
+connman-dev
+cmake
 libpam-gnome-keyring
 xinit
 xterm
