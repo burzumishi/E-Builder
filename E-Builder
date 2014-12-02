@@ -75,10 +75,8 @@ echo
 echo " * E-Builder: Installing necessary dependencies ...";
 echo
 
-SUDO=$(which sudo);
-
 #
-$SUDO apt-get install $DEPENDENCIES;
+apt-get install $DEPENDENCIES;
 
 #
 # Download and Install Packages from Git Repos

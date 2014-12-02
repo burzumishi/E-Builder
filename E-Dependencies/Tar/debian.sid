@@ -56,7 +56,6 @@ libsystemd-id128-dev
 libsystemd-journal-dev
 libsystemd-login-dev
 libtiff-dev
-libts-dev
 libudev-dev
 libvlc-dev
 libwebp-dev
@@ -111,6 +110,7 @@ libxss-dev
 luajit
 make
 mount
+python-dev
 sndfile-programs
 systemd
 systemd-cron
