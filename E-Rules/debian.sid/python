@@ -1,7 +1,4 @@
 PREFIX="$1";
 
-./configure --prefix=$PREFIX 
+python setup.py install --prefix=/usr
 
-make
-
-make install

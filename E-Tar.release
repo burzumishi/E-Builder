@@ -4,23 +4,23 @@
 #
 # Libraries
 #
-rel/libs/efl/efl-1.12.1.tar.gz
-rel/libs/evas_generic_loaders/evas_generic_loaders-1.12.0.tar.gz
-rel/libs/emotion_generic_players/emotion_generic_players-1.12.0.tar.gz
-rel/libs/elementary/elementary-1.12.1.tar.gz
+rel/libs/efl/efl-1.14.0.tar.gz
+rel/libs/evas_generic_loaders/evas_generic_loaders-1.14.0.tar.gz
+rel/libs/emotion_generic_players/emotion_generic_players-1.14.0.tar.gz
+rel/libs/elementary/elementary-1.14.0.tar.gz
 #
 # Enlightenment Desktop Environment
 #
-rel/apps/enlightenment/enlightenment-0.19.1.tar.gz
+rel/apps/enlightenment/enlightenment-0.19.5.tar.gz
 #
 # Bindings
 #
-rel/bindings/python/python-efl-1.12.0.tar.gz
+rel/bindings/python/python-efl-1.14.0.tar.gz
 #
 # Applications
 #
 rel/apps/econnman/econnman-1.1.tar.gz
-rel/apps/terminology/terminology-0.7.0.tar.gz
-releases/expedite-1.7.9.tar.gz
-releases/exquisite-1.0.0.tar.gz
-rel/apps/enventor/enventor-0.4.1.tar.gz
+rel/apps/terminology/terminology-0.8.0.tar.gz
+rel/apps/rage/rage-0.1.4.tar.gz
+rel/apps/epour/epour-0.6.0.tar.gz
+rel/apps/enventor/enventor-0.5.0.tar.gz
